@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "build": "tsc",
+    "start": "tsx src/index.ts",
+    "dev": "tsx src/index.ts",
+    "inspect": "set DANGEROUSLY_OMIT_AUTH=true && npx @modelcontextprotocol/inspector npm run dev"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/inspector": "^0.17.1",
+    "@modelcontextprotocol/sdk": "^1.20.1",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^24.8.1",
+    "mcp-server-everything": "^0.0.1-security",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}

@@ -1,5 +1,5 @@
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
-import server from "../config/mcp";
+import { server } from "../config/mcp";
 import "./tools";
 import "./resources";
 import "./prompts";

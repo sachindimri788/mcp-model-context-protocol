@@ -1,5 +1,5 @@
 import { CreateMessageResultSchema } from "@modelcontextprotocol/sdk/types.js";
-import server from "../config/mcp";
+import { server } from "../config/mcp";
 import { createUser } from "./tools";
 
 // Sampling is the process of generating output from the model. It decides which words or tokens to produce based on probabilities.

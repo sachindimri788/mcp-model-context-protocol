@@ -1,6 +1,6 @@
 import z from "zod";
 import fs from "fs/promises";
-import server from "../config/mcp";
+import { server } from "../config/mcp";
 
 // A tool lets the model perform real actions or execute code. It represents functions or APIs the model can call to affect the world.
 server.tool(

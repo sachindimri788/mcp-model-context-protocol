@@ -1,4 +1,4 @@
-import server from "../config/mcp";
+import { server } from "../config/mcp";
 import { ResourceTemplate } from "@modelcontextprotocol/sdk/server/mcp.js";
 
 // A resource provides data or context the model can read. It represents static information, like a file, record, or dataset.

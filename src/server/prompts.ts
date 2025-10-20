@@ -1,5 +1,5 @@
 import z from "zod";
-import server from "../config/mcp";
+import { server } from "../config/mcp";
 import { text } from "stream/consumers";
 
 // A prompt defines what the model should do or generate. It acts as the instruction or question given to the model.

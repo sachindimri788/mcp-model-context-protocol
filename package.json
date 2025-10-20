@@ -3,11 +3,16 @@
     "build": "tsc",
     "start:server": "tsx src/server/index.ts",
     "dev:server": "tsx src/server/index.ts",
-    "inspect:server": "set DANGEROUSLY_OMIT_AUTH=true && npx @modelcontextprotocol/inspector npm run dev:server"
+    "inspect:server": "set DANGEROUSLY_OMIT_AUTH=true && npx @modelcontextprotocol/inspector npm run dev:server",
+    "client:dev": "tsx src/client/index.ts"
   },
   "dependencies": {
+    "@ai-sdk/google": "^1.2.22",
+    "@inquirer/prompts": "^7.9.0",
     "@modelcontextprotocol/inspector": "^0.17.1",
     "@modelcontextprotocol/sdk": "^1.20.1",
+    "ai": "^4.3.16",
+    "dotenv": "^16.5.0",
     "zod": "^3.25.76"
   },
   "devDependencies": {

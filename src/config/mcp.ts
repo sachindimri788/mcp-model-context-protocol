@@ -12,10 +12,14 @@ export const server = new McpServer({
   },
 });
 
-export const clientMcp = new Client({
-  name: "My MCP Client",
-  version: "1.0.0",
-  capabilities: {
-    sampling: {},
+export const clientMcp = new Client(
+  {
+    name: "My MCP Client",
+    version: "1.0.0",
   },
-});
+  {
+    capabilities: {
+      sampling: {},
+    },
+  }
+);

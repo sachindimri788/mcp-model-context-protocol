@@ -1,7 +1,8 @@
 import z from "zod";
 import fs from "fs/promises";
-import server from "./config/mcp";
+import server from "../config/mcp";
 
+// A tool lets the model perform real actions or execute code. It represents functions or APIs the model can call to affect the world.
 server.tool(
   "create-user",
   "Create a new user in the system",
@@ -33,13 +34,13 @@ server.tool(
   }
 );
 
-async function createUser(user: {
+export async function createUser(user: {
   name: string;
   email: string;
   address: string;
   phone: string;
 }) {
-  const users = await import("./data/user.json", {
+  const users = await import("../data/user.json", {
     with: { type: "json" },
   }).then((m) => m.default);
   const id = users.length + 1;

@@ -1,9 +1,9 @@
 {
   "scripts": {
     "build": "tsc",
-    "start": "tsx src/index.ts",
-    "dev": "tsx src/index.ts",
-    "inspect": "set DANGEROUSLY_OMIT_AUTH=true && npx @modelcontextprotocol/inspector npm run dev"
+    "start:server": "tsx src/server/index.ts",
+    "dev:server": "tsx src/server/index.ts",
+    "inspect:server": "set DANGEROUSLY_OMIT_AUTH=true && npx @modelcontextprotocol/inspector npm run dev:server"
   },
   "dependencies": {
     "@modelcontextprotocol/inspector": "^0.17.1",

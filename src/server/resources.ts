@@ -1,7 +1,7 @@
-import { text } from "stream/consumers";
-import server from "./config/mcp";
+import server from "../config/mcp";
 import { ResourceTemplate } from "@modelcontextprotocol/sdk/server/mcp.js";
 
+// A resource provides data or context the model can read. It represents static information, like a file, record, or dataset.
 server.resource(
   "users",
   "users://all",
@@ -11,7 +11,7 @@ server.resource(
     mimeType: "application/json",
   },
   async (uri) => {
-    const users = await import("./data/user.json", {
+    const users = await import("../data/user.json", {
       with: { type: "json" },
     }).then((m) => m.default);
 
@@ -36,7 +36,7 @@ server.resource(
     mimeType: "application/json",
   },
   async (uri, { userId }) => {
-    const users = await import("./data/user.json", {
+    const users = await import("../data/user.json", {
       with: { type: "json" },
     }).then((m) => m.default);
     const user = users.find((u) => u.id === parseInt(userId as string));

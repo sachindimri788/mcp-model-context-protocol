@@ -1,5 +1,7 @@
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import server from "./config/mcp";
+import "./tools";
+import "./resources";
 
 // The main function initializes and connects the MCP (Model Context Protocol) server.
 async function main() {
